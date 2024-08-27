@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    background: #021526;
+    font-family: 'Gloria Hallelujah';
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: initial;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    height: 60px;
+    width: 140px;
+}
+
+.encabezado {
+    color: #fbfdff;
+    font-size: 1.4rem;
+    margin-left: 2px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.areaTexto, .mensaje {
+    border-radius: 24px;
+    color: #ffffff;
+    background: #484f51;
+    border: none;
+    resize: none;
+    width: 150%;
+    max-width: 900px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #ffffff;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 0.9rem;
+}
+ .areaTexto:focus, .mensaje:focus {
+    outline: none;
+ }
+
+ .mensaje {
+    background-image: url("./Imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-color: #484f51;
+    background-position: center;
+    background-size: contain;
+}
+
+ .botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+button {
+    background: #D8DFE8;
+    border: 1px solid #6EACDA;
+    border-radius: 24px;
+    color: #6EACDA;
+    cursor:pointer;
+    height: 30px;
+    width: 200px;
+    margin: 5px;
+    transition: transform 0.9s ease;
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+.btn-desencriptar:hover, .btn-copiar:hover{
+    background: #0A3871;
+    color:#ebebeb;
+}
+
+.btn-encriptar:hover {
+    background: #D8DFE8;
+    color: #02336f;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.btn-copiar {
+    background-color: #ffffff;
+}
+
+.informacion {
+    color: #E2E2B6;
+    font-size: 0.7rem;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-image: url("./Imagenes/Signo_de_exclamacion.png");
+    background-repeat: no-repeat;
+    background-color: #021526;
+    background-size: auto;
+    display: flex;
+   justify-content: center
+}
+
+.pie {
+    display: flex;
+    align-content: space-between;
+    color:aliceblue;
+    background-color: #050505;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .encabezado {
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+
+    .areaTexto, .mensaje {
+        height: 200px;
+        padding: 15px;
+    
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-copiar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacion {
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+
+    .pie {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado {
+        font-size: 1rem;
+    }
+
+    .areaTexto, .mensaje {
+        height: 180px;
+        padding: 10px;
+    }
+
+    .informacion {
+        font-size: 0.7rem;
+    }
+}
